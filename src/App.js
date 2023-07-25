@@ -1,5 +1,6 @@
 import hotBg from "./assests/1s.jpg"
 import coldBg from "./assests/1w.jpg"
+import Description from "./components/Description";
 
 
 function App() {
@@ -22,8 +23,7 @@ function App() {
             <h1>34 °C</h1>
           </div>
         </div>
-
-
+        <Description/>
       </div>
     </div>
       
