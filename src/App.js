@@ -12,7 +12,7 @@ function App() {
           <button>°F</button>
         </div>
 
-        <div className="section section__temprature">
+        <div className="section section__temprature ">
           <div className="icon">
             <h3>London GB</h3>
             <img src="https://cdn-icons-png.flaticon.com/128/2698/2698250.png" alt="weather icon" />
@@ -23,7 +23,7 @@ function App() {
           </div>
         </div>
 
-        
+
       </div>
     </div>
       
