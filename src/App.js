@@ -11,6 +11,7 @@ function App() {
 
     const fetchWeatherData = async ()=>{
       const data = await getFormatedWeatherData('paris');
+      console.log(data);
     };
     fetchWeatherData();
   },[]);
