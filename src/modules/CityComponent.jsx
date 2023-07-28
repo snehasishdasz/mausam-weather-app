@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
-
+import { NavLink } from "react-router-dom";
+import userImage from "../user-image.jpg"
 
 const WeatherLogo = styled.img`
     width: 140px;
@@ -44,13 +45,18 @@ const CityComponent = (props) => {
     const {updateCity,fetchWeather} = props;
   return (
     <>
-        <WeatherLogo src="/icons/perfect-day.svg" />
+        <WeatherLogo src="/icons/day.svg" />
         <ChooseCityLabel>Find Weather of your city</ChooseCityLabel>
         <SearchBox onSubmit={fetchWeather}>
             <input type="text" placeholder='City' onChange={(e)=>updateCity(e.target.value)} />
             <button type='submit'>Search</button>
         </SearchBox>
 
+        {/* <NavLink to="/profile">
+      <div className="floating-icon" >
+        <img src={userImage} alt="User" className="user-image" />
+      </div>
+      </NavLink> */}
         
     </>
   )

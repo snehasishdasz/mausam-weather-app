@@ -5,8 +5,7 @@ import WeatherComponent from './modules/WeatherInfoComponent';
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Profile from "./pages/Profile"
 import "./App.css"
-import { NavLink } from "react-router-dom";
-import userImage from "./user-image.jpg"
+
 import axios from "axios";
 
 const API_KEY = "18c668abed36ca13c814a79254e9c9c2"
@@ -52,7 +51,7 @@ const App = () => {
       </BrowserRouter> */}
 
       <Container>
-          <AppLabel>React Weather App</AppLabel> 
+          <AppLabel><span style={{color:"black",fontSize:"25px"}}>मौसम</span> A Weather App</AppLabel> 
           {weather ? (
               <WeatherComponent weather={weather}/>
           ) : (
@@ -63,11 +62,7 @@ const App = () => {
       </footer>
 
 
-      {/* <NavLink to="/profile">
-      <div className="floating-icon" >
-        <img src={userImage} alt="User" className="user-image" />
-      </div>
-      </NavLink> */}
+      
     </>
       
     

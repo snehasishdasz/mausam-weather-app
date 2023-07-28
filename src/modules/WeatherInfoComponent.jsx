@@ -128,6 +128,12 @@ const WeatherComponent = (props) => {
             <WeatherInfoComponent name="wind" value={weather?.wind?.speed} />
             <WeatherInfoComponent name="pressure" value={weather?.main?.pressure} />
         </WeatherInfoContainer>
+
+        {/* <NavLink to="/profile">
+      <div className="floating-icon" >
+        <img src={userImage} alt="User" className="user-image" />
+      </div>
+      </NavLink> */}
     </>
   )
 }
